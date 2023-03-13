@@ -9,13 +9,4 @@ export const dataRoute= writable([
         path: "/",
         content: "Home page",
     },
-    // {
-
-    //     id: 2,
-    //     title:"About",
-    //     path: "/about",
-    //     content: "About page",
-    // },
-
-
 ]);

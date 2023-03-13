@@ -27,25 +27,18 @@
 </div>
 
 <section>
-	<h1>Blog</h1>
     <ul>
         {#each $dataRoute as item}
             <li><a href="/blog/{item.id - 1}">{item.title}</a></li>
         {/each}
     </ul>
-	<!-- <ul>
-		{#await createPost()}
-            <p>loading..........</p>
-            {:then $dataRoute} 
-            <p>bhale bhale shawa shawa</p>
-        {/await}
-	</ul> -->
 </section>
 
 <style>
 	.create {
 		max-width: 600px;
 		margin: 0 auto;
+		margin-top: 100px;
 	}
 	.create form {
 		display: grid;
@@ -59,7 +52,9 @@
 	.create form textarea {
 		display: block;
 		width: 100%;
-		background: blueviolet;
+		background: rgb(238,174,202);
+		background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+
 		border-radius: 10px;
 		color: aliceblue;
 		padding: 0.5rem;
