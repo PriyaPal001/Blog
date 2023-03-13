@@ -11,6 +11,7 @@
 </div>
 
   <slot/>
+  
 
 <!-- <footer>
     <p>Created by <a href="">@priya</a></p>

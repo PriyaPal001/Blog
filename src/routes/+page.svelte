@@ -21,8 +21,9 @@
 		<label for="title">Title</label>
 		<input type="text" name="title" id="title" bind:value={title} />
 		<label for="content">Content</label>
-		<textarea name="content" id="content" bind:value={content} />
+		<textarea name="content" id="content" rows="4"  bind:value={content} />
 		<button type="submit">Create</button>
+		    
 	</form>
 </div>
 
@@ -51,19 +52,33 @@
 	.create form input,
 	.create form textarea {
 		display: block;
-		width: 100%;
+		/* width: 100%; */
 		background: rgb(238,174,202);
 		background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-
+		outline: none;
 		border-radius: 10px;
-		color: aliceblue;
+		color: black;
 		padding: 0.5rem;
 		border: 1px solid white;
 	}
-	.create form textarea {
-		height: 200px;
+	.create form input:focus,
+	.create form textarea:focus {
+		border: 2px solid whitesmoke !important;
+		outline: none;
 	}
+	/* .create form textarea {
+		height: 200px;
+	} */
 	.create form button {
 		justify-self: end;
+	}
+	button {
+		background: rgb(238,174,202);
+		background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+		color: black;
+		border: none;
+		padding: 0.5rem 1rem;
+		border: 1px solid white;
+		border-radius: 10px;
 	}
 </style>
